@@ -18,7 +18,7 @@ authRouter.post("/signup", (req, res) => {
       return res.status(500).send({ message: "Error Occured while signup" });
     }
 
-    return res.status(201).send({ message: "Signup Success", data: success });
+    return res.status(201).send({ message: "Signup Success" });
   });
 });
 
