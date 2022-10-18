@@ -42,7 +42,7 @@ authRouter.post("/login", async (req, res) => {
     "SECRET",
     { expiresIn: "4 hour" }
   );
-  return res.send({ message: "login Succes", token: token, user });
+  return res.send({ message: "login Succes", token: token });
 });
 
 module.exports = authRouter;
