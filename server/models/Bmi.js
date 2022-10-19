@@ -3,7 +3,7 @@ const { Schema, model } = require("mongoose");
 const BmiSchema = new Schema({
   userid: String,
   bmi: Number,
-  date: Date,
+  date: String,
 });
 
 const Bmi = model("bmi", BmiSchema);
