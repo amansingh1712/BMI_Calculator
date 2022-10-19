@@ -27,14 +27,12 @@ export const Signup = () => {
   };
   const handleSignup = async (e) => {
     e.preventDefault();
-    console.log("formData:", formData);
 
     try {
       const { data } = await axios.post(
         "https://morning-bayou-54068.herokuapp.com/auth/signup",
         formData
       );
-      console.log("data:", data);
       if (data.message === "Username already exist") {
         toast({
           title: `username already exist`,
