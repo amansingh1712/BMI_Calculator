@@ -35,7 +35,7 @@ export const Signup = () => {
         formData
       );
       console.log("data:", data);
-      if (data.message == "Username already exist") {
+      if (data.message === "Username already exist") {
         toast({
           title: `username already exist`,
           status: "info",
